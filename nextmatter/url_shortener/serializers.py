@@ -2,7 +2,7 @@ from rest_framework.serializers import (
     ModelSerializer, URLField, SerializerMethodField, CharField
 )
 
-from .utils import shorten_url
+from .utils import shorten_id
 from .models import Url
 
 
@@ -15,8 +15,7 @@ class CreateShortUrlSerializer(ModelSerializer):
         fields = ["url", "short_code"]
 
     def get_short_code(self, obj):
-        short_code = shorten_url(obj.id)
-        print("Short code: ", short_code)
+        short_code = shorten_id(obj.id)
         return short_code
 
 

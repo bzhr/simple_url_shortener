@@ -29,4 +29,4 @@ def retreive_long_url(request):
     except UrlModel.DoesNotExist:
         raise NotFound("Code not found in DB")
     serializer = RetreiveUrlSerializer(obj)
-    return Response(serializer.data, status=201)
+    return Response(serializer.data, status=200)
