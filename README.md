@@ -29,7 +29,7 @@ There are two endpoints, one to create a short URL and another to retreive the o
 }
 ```
 
-## Retreive the original URL
+### Retreive the original URL
 
 - Make a POST request to `/retreive-original-url`
 - POST data format: `{"short_code": "MjM="}`
