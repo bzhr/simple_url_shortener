@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from nextmatter.url_shortener.views import create_short_url, retreive_long_url
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('shorten-url', create_short_url, name='shorten'),
+    path('retreive-original-url', retreive_long_url, name='retreive-original')
 ]
