@@ -45,4 +45,4 @@ There are two endpoints, one to create a short URL and another to retreive the o
 
 To run tests:
 
-`./manage.py`
+`./manage.py test`
