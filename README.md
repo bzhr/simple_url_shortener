@@ -6,6 +6,8 @@ To create a virtual env and install dependencies run:
 
 `pipenv shell`
 
+`pipenv install`
+
 To run the server:
 
 `./manage.py runserver`
